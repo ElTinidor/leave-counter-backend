@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Leave File</title>
+</head>
+<body>
+    <h1>Upload Leave Excel File</h1>
+    <form action="/count-leaves" method="post" enctype="multipart/form-data">
+        <label for="name">Employee Name:</label>
+        <input type="text" name="name" placeholder="Enter name exactly as in Excel" required><br><br>
+
+        <label for="file">Excel File:</label>
+        <input type="file" name="file" required><br><br>
+
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

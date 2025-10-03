@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Results</title>
+</head>
+<body>
+    <h2>Leave Summary for {{ name }}</h2>
+    <p><strong>Annual Leave:</strong> {{ al_count }} days</p>
+    <ul>
+        {% for d in al_dates %}
+            <li>{{ d }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><strong>Sick Leave:</strong> {{ sl_count }} days</p>
+    <ul>
+        {% for d in sl_dates %}
+            <li>{{ d }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><strong>Public Holiday:</strong> {{ ph_count }} days</p>
+    <ul>
+        {% for d in ph_dates %}
+            <li>{{ d }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go back</a>
+</body>
+</html>
