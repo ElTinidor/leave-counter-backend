@@ -9,7 +9,7 @@ app = FastAPI()
 # Allow CORS for your React frontend URL (127.0.0.1:3000)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:3000"],
+    allow_origins=["http://127.0.0.1:3000", "https://eltinidor.github.io"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
